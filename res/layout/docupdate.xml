@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <EditText
+        android:id="@+id/etxt_allergies"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight = "25dp"
+        android:layout_marginTop="90dp"
+        android:ems="10" 
+        android:hint="Allergies">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etxt_medicalhistory"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etxt_allergies"
+        android:layout_below="@+id/etxt_allergies"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight = "25dp"
+        android:ems="10" 
+        android:hint="Medical History"/>
+
+    <Button
+        android:id="@+id/btn_saveupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etxt_medicalhistory"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="106dp"
+        android:layout_marginLeft="30dp"
+        android:text="Save" 
+        android:background="@drawable/buttom"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_saveupdate"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/btn_saveupdate"
+        android:text="Cancel" 
+        android:background="@drawable/buttom"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
